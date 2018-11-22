@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>cat</title>
+      <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>It is {{n.name}}</h>
+  	<p> please vote</p>
+  	<form action="{{ url_for('catbook_profile', id=n.id) }}" method="post">
+  	<input type="submit" value="vote">
+  </body>
+</html>
